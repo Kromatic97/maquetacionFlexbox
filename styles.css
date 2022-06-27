@@ -1,0 +1,151 @@
+:root{
+    --color1:#FF9F29;
+    --color2:#1A4D2E;
+    --color3:#FFC4C4;
+    --color4:#FF869E;
+    --color5:#A10035;
+    --color6:#748DA6;
+    --color7:#A27B5C;
+    --color8:#610C63;
+    --color9:#76BA99;
+    --colorbutton:#87805E;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:black;
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_principal{
+max-width: 1200px;
+display: flex;
+flex-direction:column;
+gap: 1em;
+}
+
+/* Header */
+/* el padre */
+.content_header{
+    display: flex;
+    gap:1em
+}
+/* los hijos atributos que les afecta gral */
+.content_header .box_header{
+    width: 50%;
+    padding: 1em;
+    border-radius: 1em;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+/* los hijos que afectan individualmente */
+.content_header .box_header:nth-child(1){
+    background-color: var(--color1);
+}
+/* los hijos individualmente */
+.content_header .box_header:nth-child(2){
+    background-color: var(--color2);
+}
+
+/* Main */
+/* el Padre */
+.content_main{
+    display: flex;
+}
+
+/* el hijo */
+.content_main .content_main-menu{
+    width: 70%;  
+    display: flex;
+    gap:1em;
+    flex-wrap: wrap;
+
+    
+}
+
+/* los nietos */
+/* atributos que les afecta en gral */
+.content_main .content_main-menu .box_menu{
+    padding: 1em;
+    border-radius: 1em;
+    min-height: 200px;
+    width: calc(33.33% - 1em);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+
+    /* atributos que les afecta en particular */
+}
+.content_main .content_main-menu .box_menu:nth-child(1){
+    background-color: var(--color3);
+}
+
+.content_main .content_main-menu .box_menu:nth-child(2){
+    background-color: var(--color4);
+}
+
+.content_main .content_main-menu .box_menu:nth-child(3){
+    background-color: var(--color5);
+}
+.content_main .content_main-menu .box_menu:nth-child(4){
+    background-color: var(--color6);
+}
+
+.content_main .content_main-menu .box_menu:nth-child(5){
+    background-color: var(--color7);
+}
+
+.content_main .content_main-menu .box_menu:nth-child(6){
+    background-color: var(--color8);
+}
+
+/* sidebar */
+
+.content_sidebar{
+    background-color: var(--color9);
+    width: 30%; 
+    border-radius: 1em;
+    padding: 1em;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background-color: var(--colorbutton);
+    padding: 1em;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+
+
+
+
+
+
